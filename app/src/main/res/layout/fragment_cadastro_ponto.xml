@@ -1,0 +1,241 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fcsl.cnec.edu.br.cadastrodepontos.CadastroPonto"
+    android:id="@+id/frameCadastroponto"
+    android:background="#fddfe9">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cadastrar Ponto de Bebidas:"
+        android:id="@+id/textViewCadEndereco"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextCep"
+        android:layout_alignBottom="@+id/buttonCep"
+        android:layout_toRightOf="@+id/textViewCEP"
+        android:layout_toEndOf="@+id/textViewCEP" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar CEP"
+        android:id="@+id/buttonCep"
+        android:layout_below="@+id/textViewCadEndereco"
+        android:layout_toRightOf="@+id/editTextCep"
+        android:layout_toEndOf="@+id/editTextCep" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="CEP:"
+        android:id="@+id/textViewCEP"
+        android:layout_alignBottom="@+id/editTextCep"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Logradouro:"
+        android:id="@+id/textViewLogradouro"
+        android:layout_alignBottom="@+id/editTextLogradouro"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextLogradouro"
+        android:layout_below="@+id/editTextCep"
+        android:layout_alignRight="@+id/buttonCep"
+        android:layout_alignEnd="@+id/buttonCep"
+        android:layout_toRightOf="@+id/textViewLogradouro"
+        android:layout_toEndOf="@+id/textViewLogradouro" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nº:"
+        android:id="@+id/textViewnumero"
+        android:layout_alignBottom="@+id/editTextNumero"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextNumero"
+        android:layout_below="@+id/editTextLogradouro"
+        android:layout_toRightOf="@+id/textViewnumero"
+        android:layout_alignRight="@+id/textViewLogradouro"
+        android:layout_alignEnd="@+id/textViewLogradouro" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Bairro:"
+        android:id="@+id/textViewBairro"
+        android:layout_alignBottom="@+id/editTextNumero"
+        android:layout_toRightOf="@+id/editTextNumero"
+        android:layout_toEndOf="@+id/editTextNumero" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextBairro"
+        android:layout_below="@+id/editTextLogradouro"
+        android:layout_alignRight="@+id/editTextLogradouro"
+        android:layout_alignEnd="@+id/editTextLogradouro"
+        android:layout_toRightOf="@+id/textViewLatitude2"
+        android:layout_toEndOf="@+id/textViewLatitude2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Cidade:"
+        android:id="@+id/textViewCidade"
+        android:layout_below="@+id/textViewnumero"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextCidade"
+        android:layout_alignBottom="@+id/textViewCidade"
+        android:layout_toRightOf="@+id/textViewCidade"
+        android:layout_alignRight="@+id/textViewNomeDoBar"
+        android:layout_alignEnd="@+id/textViewNomeDoBar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="UF:"
+        android:id="@+id/textView2"
+        android:layout_alignBottom="@+id/editTextCidade"
+        android:layout_toRightOf="@+id/editTextCidade"
+        android:layout_toEndOf="@+id/editTextCidade" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextUf"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_alignRight="@+id/editTextBairro"
+        android:layout_alignEnd="@+id/editTextBairro" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Coordenadas Ponto de Bebidas:"
+        android:id="@+id/textViewCoodenadas"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Lat:"
+        android:id="@+id/textViewLatitude"
+        android:layout_below="@+id/textViewCoodenadas"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/editTextCep"
+        android:layout_toStartOf="@+id/editTextCep" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textViewLatitude2"
+        android:layout_alignTop="@+id/textViewLatitude"
+        android:layout_toLeftOf="@+id/textViewLongitude"
+        android:layout_alignLeft="@+id/textViewCadEndereco"
+        android:layout_alignStart="@+id/textViewCadEndereco" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Lon:"
+        android:id="@+id/textViewLongitude"
+        android:layout_below="@+id/textViewCoodenadas"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textViewLongitude2"
+        android:layout_below="@+id/textViewCoodenadas"
+        android:layout_alignRight="@+id/editTextUf"
+        android:layout_alignEnd="@+id/editTextUf"
+        android:layout_toEndOf="@+id/textViewLongitude"
+        android:layout_toRightOf="@+id/textViewLongitude" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nome do Bar:"
+        android:id="@+id/textViewNomeDoBar"
+        android:layout_below="@+id/textViewLatitude2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextNomeDoBar"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textViewNomeDoBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar Boteco !  "
+        android:id="@+id/buttonSalvarBar"
+        android:layout_below="@+id/editTextNomeDoBar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
